@@ -1,0 +1,732 @@
+ OMP Threads # =                     0
+-----------------------------------------------------------------
+PARAMETER FILE FOR DNS OF TURBULENT BOUNDARY LAYER WITH ROUGH WAL
+-----------------------------------------------------------------
+FILENAMES                                                        
+PARAMETER FILE FOR SIMULATION        FILEPAR:                    
+Re300_tran_01.par                                                                                   
+-------------------------------------------------------------    
+THE INLFOW DATA GENERATION FOR TURBULENT BOUNDARY LAYER          
+-------------------------------------------------------------    
+SIMULATION TYPE                                                  
+SIMULATION TYPE (INFLOW=0,MAIN=1)    ITYPE  :              1
+-------------------------------------------------------------    
+THE NUMBER OF GRID IN X1 DIRECTION   N1     :           2049
+THE NUMBER OF GRID IN X2 DIRECTION   N2     :            150
+THE NUMBER OF GRID IN X3 DIRECTION   N3     :            513
+REYNOLDS NUMBER                      RE     :  0.3000000E+03
+Re_theta at inlet station         R_theta_in:  0.3000000E+03
+THE PHYSICAL LENGTH IN X1            ALX    :  0.7860000E+03
+THE PHYSICAL LENGTH IN X2            ALY    :  0.6000000E+02
+THE PHYSICAL LENGTH IN X3            ALZ    :  0.9600000E+02
+TIME STEP                            DT     :  0.3000000E+00
+INITIAL TURBULENCE INTENSITY         VPER   :  0.0000000E+00
+MAXIMUM CFL NUMBER                   CFLMAX :  0.2000000E+01
+-------------------------------------------------------------    
+THE PARAMETER ABOUT TIME STEP                                    
+THE START NUMBER OF TIME STEP        NSTART :          20001
+THE FINAL NUMBER OF TIME STEP        NFINAL :          30000
+INTERVAL OF PRINT OUTPUT FILE        NPRN   :           5000
+THE START TIME                       TSTART :  0.6000000E+04
+INTERVAL OF PRINT IN INSF(Non-zero)  NINS   :             20
+INTERVAL OF RE-READING PARAMETER     NREPAR :           1000
+INTERVAL OF READ/WRITE INFLOW FILE   NINFLOW:           5000
+INTERVAL OF AVERAGING                NAVGSTP:              5
+-------------------------------------------------------------    
+INFLOW PARAMETER                                                 
+Continuous inflow generation(YES=1)  IGEN   :              0
+INFLOW SAVING (YES=1)                INFSAVE:              0
+INFLOW SAVING POINT                  I_SAVE :             32
+THE FIRST READING STEP OF INFLOW     NFLINF :          40000
+-------------------------------------------------------------    
+OPTION                                                           
+WRITE OPTION        (YES=1)          NWRITE :              1
+READ OPTION (YES=1, N1M/2->N1M=2)    NREAD  :              1
+RE-READING PARAMETER OPTION (YES=1)  IREPAR :              1
+OPTIMAL TIME STEP   (YES=1)          IDTOPT :              0
+INPUT LENGTH IN CODE  (YES=1)        INCODE :              0
+-------------------------------------------------------------    
+AVERAGING OPTION                                                 
+AVERAGING OPTION (TRAN=0,AVG=1,CON=2)IAVG   :              0
+BUDGET AVERAGING (YES=1)             IAVGB  :              0
+CORRELATION AVERAGING (YES=1)        IAVGC  :              0
+CORRELATION J POINT NUMBER MAX       JCMAX  :              3
+CORRELATION J POINT 1                JC1    :             16
+CORRELATION J POINT 3                JC3    :              0
+CORRELATION J POINT 3                JC3    :              0
+-------------------------------------------------------------    
+POSTPROCESSING OPTION                                            
+WRITE TIME HISTORY FILE (YES=1)      ITHIST :              1
+TIME HISTORY POINT 1                 ITHIST1:              1
+TIME HISTORY POINT 2                 ITHIST2:            100
+TIME HISTORY POINT 3                 ITHIST3:            200
+TIME HISTORY POINT 4                 ITHIST4:            300
+TIME HISTORY POINT 5                 ITHIST5:            400
+TIME HISTORY POINT 6                 ITHIST6:            500
+TIME HISTORY POINT 7                 ITHIST7:            600
+TIME HISTORY POINT 8                 ITHIST8:            700
+TIME HISTORY POINT 9                 ITHIST9:            800
+TIME HISTORY POINT FOR AVG           IAVGMON:            500
+TIME HISTORY POINT FOR AVG           JAVGMON:             50
+WRITE PROFILE FILE (YES=1)           IPROF  :              1
+PROFILE POINT 1                      IPROF1 :              1
+PROFILE POINT 2                      IPROF2 :            200
+PROFILE POINT 3                      IPROF3 :            400
+PROFILE POINT 4                      IPROF4 :            600
+PROFILE POINT 5                      IPROF5 :            800
+PROFILE POINT 6                      IPROF6 :           1000
+WRITE INSTANTANEOUS FLOW FIELD(YES=1)INSF   :              0
+WRITE WALL DATA (YES=1)              IWRITEW:              1
+-------------------------------------------------------------    
+FILENAMES                                                        
+INPUT FILE FOR READUP                FILEINI:                    
+/home/HyunQ/Rough_TBL/LMP/Main_LMP_INS/DT03/tran.020000                                             
+OUTPUT FILE PREFIX FOR WRITEUP       FILEOUT:                    
+/home/HyunQ/Rough_TBL/LMP/Main_LMP_INS/DT03/tran.                                                   
+INPUT FILE FOR AVERAGING             FILEAVG:                    
+avg_a.000000                                                                                        
+INPUT FILE FOR BUDGET AVERAGING      FILEBDG:                    
+avg_b.000000                                                                                        
+INPUT FILE FOR CORRELATION AVERAGING FILECOR:                    
+avg_c.000000                                                                                        
+OUTPUT FILE PREFIX FOR AVG DATA      FOUTAVG:                    
+avg_a.                                                                                              
+OUTPUT FILE PREFIX FOR BUDGET DATA   FOUTBDG:                    
+avg_b.                                                                                              
+OUTPUT FILE PREFIX FOR COR. DATA     FOUTCOR:                    
+avg_c.                                                                                              
+INPUT FILE FOR CONT. INFLOW GEN.     FRESIN :                    
+rescale.000000                                                                                      
+OUTPUT FILE FOR CONT. INFLOW GEN.    FRESOUT:                    
+rescale.                                                                                            
+INPUT FILE PREFIX FOR INFLOW B.C.    FILEINF:                    
+/home/HyunQ/Rough_TBL/Inflow/zgrid513/DT03/inflow.                                                  
+OUTPUT FILE PREFIX FOR INFLOW SAVING FILEINS:                    
+inflow.                                                                                             
+GRID FILE IN Y DOMAIN                FILEGRD:                    
+rough.grd                                                                                           
+IBM data                             FILEIBM:                    
+IBM.dat                                                                                             
+-------------------------------------------------------------    
+FILE FORMAT TYPE OPTION (UNFORMATTED=0, FORMATTED=1)             
+INPUT FILE                           IFORIN :              0
+OUTPUT FILE                          IFOROUT:              0
+INFLOW FILE                          IFORINF:              0
+RESCALE DATA FILE                    IFORRES:              0
+AVERAGE FILE                         IFORAVG:              0
+-------------------------------------------------------------    
+IMMERSED BOUNDARY                                                
+TIME for first forcing               TFOR   :  0.2000000E+03
+APPLY MOMENTUM FORCING (YES=1)       IMFOR  :              1
+APPLY MASS SOURCE (YES=1)            IMASS  :              0
+BLOCK X START                        IB     :            214
+BLOCK Y START !3theta_in             JB     :             48
+BLOCK WIDTH                          IW     :              4
+BLOCK PERIOD                         IL     :             16
+BLOCK Z WIDTH !3theta_in             KW     :             16
+BLOCK Z PERIOD                       KL     :             16
+BLOCK HEIGHT                         HB     :  0.1500000E+01
+BLOCK SHIFT X                        EPSX   :  0.5000000E+00
+BLOCK SHIFT Y                        EPSY   :  0.5000000E+00
+ c_kapa BB PII=  0.410000000000000        5.00000000000000     
+  0.500000000000000     
+ The FIRST Parameter file read from 
+ Re300_tran_01.par                                                              
+                      
+ call make_ibm
+ Writing done
+ make_ibm done
+ Reading unformatted initial data from 
+ /home/HyunQ/Rough_TBL/LMP/Main_LMP_INS/DT03/tran.020000                        
+                      
+ 
+Maximum divergence= 0.10027E-01 Maximum CFL number= 0.24224E+01
+ 
+==================================================
+ 20001th step   Time :  0.60003E+04 DT :  0.30000E+00
+==================================================
+ 
+ INFLOW FILE OPENING FOR READING : FILE=
+ /home/HyunQ/Rough_TBL/Inflow/zgrid513/DT03/inflow.060001                       
+                      
+ 
+mass flux : Q_IN=0.5605E+04 Q_UP=0.2509E+03 Q_EX=0.5360E+04
+ F=0
+ 
+Maximum divergence= 0.48087E-11 Maximum CFL number= 0.24490E+01
+ 
+ Elapsed time   15.0000000000000     
+ 
+==================================================
+ 20002th step   Time :  0.60006E+04 DT :  0.30000E+00
+==================================================
+ 
+ 
+mass flux : Q_IN=0.5605E+04 Q_UP=0.2507E+03 Q_EX=0.5354E+04
+ F=0
+ 
+Maximum divergence= 0.45195E-11 Maximum CFL number= 0.24473E+01
+ 
+ Elapsed time   12.0000000000000     
+ 
+==================================================
+ 20003th step   Time :  0.60009E+04 DT :  0.30000E+00
+==================================================
+ 
+ 
+mass flux : Q_IN=0.5605E+04 Q_UP=0.2505E+03 Q_EX=0.5354E+04
+ F=0
+ done
+ 
+Maximum divergence= 0.13289E-12 Maximum CFL number= 0.24528E+01
+ 
+ Elapsed time   11.0000000000000     
+ 
+==================================================
+ 20004th step   Time :  0.60012E+04 DT :  0.30000E+00
+==================================================
+ 
+ 
+mass flux : Q_IN=0.5605E+04 Q_UP=0.2504E+03 Q_EX=0.5354E+04
+ F=0
+ OMP Threads # =                     0
+-----------------------------------------------------------------
+PARAMETER FILE FOR DNS OF TURBULENT BOUNDARY LAYER WITH ROUGH WAL
+-----------------------------------------------------------------
+FILENAMES                                                        
+PARAMETER FILE FOR SIMULATION        FILEPAR:                    
+Re300_tran_02.par                                                                                   
+-------------------------------------------------------------    
+THE INLFOW DATA GENERATION FOR TURBULENT BOUNDARY LAYER          
+-------------------------------------------------------------    
+SIMULATION TYPE                                                  
+SIMULATION TYPE (INFLOW=0,MAIN=1)    ITYPE  :              1
+-------------------------------------------------------------    
+THE NUMBER OF GRID IN X1 DIRECTION   N1     :           2049
+THE NUMBER OF GRID IN X2 DIRECTION   N2     :            150
+THE NUMBER OF GRID IN X3 DIRECTION   N3     :            513
+REYNOLDS NUMBER                      RE     :  0.3000000E+03
+Re_theta at inlet station         R_theta_in:  0.3000000E+03
+THE PHYSICAL LENGTH IN X1            ALX    :  0.7680000E+03
+THE PHYSICAL LENGTH IN X2            ALY    :  0.6000000E+02
+THE PHYSICAL LENGTH IN X3            ALZ    :  0.9600000E+02
+TIME STEP                            DT     :  0.3000000E+00
+INITIAL TURBULENCE INTENSITY         VPER   :  0.0000000E+00
+MAXIMUM CFL NUMBER                   CFLMAX :  0.2000000E+01
+-------------------------------------------------------------    
+THE PARAMETER ABOUT TIME STEP                                    
+THE START NUMBER OF TIME STEP        NSTART :          30001
+THE FINAL NUMBER OF TIME STEP        NFINAL :          45000
+INTERVAL OF PRINT OUTPUT FILE        NPRN   :           5000
+THE START TIME                       TSTART :  0.9000000E+04
+INTERVAL OF PRINT IN INSF(Non-zero)  NINS   :             40
+INTERVAL OF RE-READING PARAMETER     NREPAR :           1000
+INTERVAL OF READ/WRITE INFLOW FILE   NINFLOW:           5000
+INTERVAL OF AVERAGING                NAVGSTP:             10
+-------------------------------------------------------------    
+INFLOW PARAMETER                                                 
+Continuous inflow generation(YES=1)  IGEN   :              0
+INFLOW SAVING (YES=1)                INFSAVE:              0
+INFLOW SAVING POINT                  I_SAVE :             32
+THE FIRST READING STEP OF INFLOW     NFLINF :              0
+-------------------------------------------------------------    
+OPTION                                                           
+WRITE OPTION        (YES=1)          NWRITE :              1
+READ OPTION (YES=1, N1M/2->N1M=2)    NREAD  :              1
+RE-READING PARAMETER OPTION (YES=1)  IREPAR :              1
+OPTIMAL TIME STEP   (YES=1)          IDTOPT :              0
+INPUT LENGTH IN CODE  (YES=1)        INCODE :              0
+-------------------------------------------------------------    
+AVERAGING OPTION:                                                
+AVERAGING OPTION (TRAN=0,AVG=1,CON=2)IAVG   :              1
+BUDGET AVERAGING (YES=1)             IAVGB  :              0
+CORRELATION AVERAGING (YES=1)        IAVGC  :              0
+CORRELATION J POINT NUMBER MAX       JCMAX  :              3
+CORRELATION J POINT 1                JC1    :             16
+CORRELATION J POINT 3                JC3    :              0
+CORRELATION J POINT 3                JC3    :              0
+-------------------------------------------------------------    
+POSTPROCESSING OPTION                                            
+WRITE TIME HISTORY FILE (YES=1)      ITHIST :              0
+TIME HISTORY POINT 1                 ITHIST1:              1
+TIME HISTORY POINT 2                 ITHIST2:            100
+TIME HISTORY POINT 3                 ITHIST3:            500
+TIME HISTORY POINT 4                 ITHIST4:            700
+TIME HISTORY POINT 5                 ITHIST5:            900
+TIME HISTORY POINT 6                 ITHIST6:           1100
+TIME HISTORY POINT 7                 ITHIST7:           1300
+TIME HISTORY POINT 8                 ITHIST8:           1500
+TIME HISTORY POINT 9                 ITHIST9:           1700
+TIME HISTORY POINT FOR AVG           IAVGMON:            500
+TIME HISTORY POINT FOR AVG           JAVGMON:              1
+WRITE PROFILE FILE (YES=1)           IPROF  :              0
+PROFILE POINT 1                      IPROF1 :              1
+PROFILE POINT 2                      IPROF2 :            100
+PROFILE POINT 3                      IPROF3 :            200
+PROFILE POINT 4                      IPROF4 :            300
+PROFILE POINT 5                      IPROF5 :            400
+PROFILE POINT 6                      IPROF6 :            500
+WRITE INSTANTANEOUS FLOW FIELD(YES=1)INSF   :              1
+WRITE WALL DATA (YES=1)              IWRITEW:              1
+-------------------------------------------------------------    
+FILENAMES                                                        
+INPUT FILE FOR READUP                FILEINI:                    
+/home/HyunQ/Rough_TBL/LMP/513/L12W075/L12W075INS/tran.030000                                        
+OUTPUT FILE PREFIX FOR WRITEUP       FILEOUT:                    
+/home/HyunQ/Rough_TBL/LMP/513/L12W075/L12W075INS/avg.                                               
+INPUT FILE FOR AVERAGING             FILEAVG:                    
+/home/HyunQ/Rough_TBL/LMP/513/L12W075/L12W075AVG/avg_a.000000                                       
+INPUT FILE FOR BUDGET AVERAGING      FILEBDG:                    
+/home/HyunQ/Rough_TBL/LMP/513/L12W075/L12W075AVG/avg_b.000000                                       
+INPUT FILE FOR CORRELATION AVERAGING FILECOR:                    
+/home/HyunQ/Rough_TBL/LMP/513/L12W075/L12W075AVG/avg_c.000000                                       
+OUTPUT FILE PREFIX FOR AVG DATA      FOUTAVG:                    
+/home/HyunQ/Rough_TBL/LMP/513/L12W075/L12W075AVG/avg_a.                                             
+OUTPUT FILE PREFIX FOR BUDGET DATA   FOUTBDG:                    
+/home/HyunQ/Rough_TBL/LMP/513/L12W075/L12W075AVG/avg_b.                                             
+OUTPUT FILE PREFIX FOR COR. DATA     FOUTCOR:                    
+/home/HyunQ/Rough_TBL/LMP/513/L12W075/L12W075AVG/avg_c.                                             
+INPUT FILE FOR CONT. INFLOW GEN.     FRESIN :                    
+rescale.000000                                                                                      
+OUTPUT FILE FOR CONT. INFLOW GEN.    FRESOUT:                    
+rescale.                                                                                            
+INPUT FILE PREFIX FOR INFLOW B.C.    FILEINF:                    
+/home/HyunQ/Rough_TBL/Inflow/zgrid513/DT03/inflow.                                                  
+OUTPUT FILE PREFIX FOR INFLOW SAVING FILEINS:                    
+inflow.                                                                                             
+GRID FILE IN Y DOMAIN                FILEGRD:                    
+rough.grd                                                                                           
+IBM data                             FILEIBM:                    
+IBM.dat                                                                                             
+-------------------------------------------------------------    
+FILE FORMAT TYPE OPTION (UNFORMATTED=0, FORMATTED=1)             
+INPUT FILE                           IFORIN :              0
+OUTPUT FILE                          IFOROUT:              0
+INFLOW FILE                          IFORINF:              0
+RESCALE DATA FILE                    IFORRES:              0
+AVERAGE FILE                         IFORAVG:              0
+-------------------------------------------------------------    
+IMMERSED BOUNDARY                                                
+TIME for first forcing               TFOR   :  0.2000000E+03
+APPLY MOMENTUM FORCING (YES=1)       IMFOR  :              1
+APPLY MASS SOURCE (YES=1)            IMASS  :              0
+BLOCK X START                        IB     :            214
+BLOCK Y START                        JB     :             48
+BLOCK WIDTH                          IW     :              4
+BLOCK PERIOD                         IL     :             16
+BLOCK Z WIDTH                        KW     :              3
+BLOCK Z PERIOD                       KL     :             16
+BLOCK HEIGHT                         HB     :  0.1500000E+01
+BLOCK SHIFT X                        EPSX   :  0.5000000E+00
+BLOCK SHIFT Y                        EPSY   :  0.5000000E+00
+ c_kapa BB PII=  0.410000000000000        5.00000000000000     
+  0.500000000000000     
+ The FIRST Parameter file read from 
+ Re300_tran_02.par                                                              
+                      
+ call make_ibm
+   12.0000000000000     
+   31.0000000000000     
+   95.0000000000000     
+   159.000000000000     
+   223.000000000000     
+   287.000000000000     
+   351.000000000000     
+   415.000000000000     
+   479.000000000000     
+ Writing done
+ make_ibm done
+ Reading unformatted initial data from 
+ /home/HyunQ/Rough_TBL/LMP/513/L12W075/L12W075INS/tran.030000                   
+                      
+ 
+Maximum divergence= 0.11213E-13 Maximum CFL number= 0.48019E+01
+ 
+==================================================
+ 30001th step   Time :  0.90003E+04 DT :  0.30000E+00
+==================================================
+ 
+ INFLOW FILE OPENING FOR READING : FILE=
+ /home/HyunQ/Rough_TBL/Inflow/zgrid513/DT03/inflow.030001                       
+                      
+ 
+mass flux : Q_IN=0.5605E+04 Q_UP=0.2788E+03 Q_EX=0.5326E+04
+ 
+Maximum divergence= 0.75981E-14 Maximum CFL number= 0.47741E+01
+ 
+ Elapsed time   24.0000000000000     
+ 
+==================================================
+ 30002th step   Time :  0.90006E+04 DT :  0.30000E+00
+==================================================
+ 
+ 
+mass flux : Q_IN=0.5605E+04 Q_UP=0.2788E+03 Q_EX=0.5326E+04
+ 
+Maximum divergence= 0.95757E-14 Maximum CFL number= 0.47511E+01
+ 
+ Elapsed time   15.0000000000000     
+ 
+==================================================
+ 30003th step   Time :  0.90009E+04 DT :  0.30000E+00
+==================================================
+ 
+ 
+mass flux : Q_IN=0.5605E+04 Q_UP=0.2788E+03 Q_EX=0.5326E+04
+ 
+Maximum divergence= 0.11069E-13 Maximum CFL number= 0.47329E+01
+ 
+ Elapsed time   13.0000000000000     
+ 
+==================================================
+ 30004th step   Time :  0.90012E+04 DT :  0.30000E+00
+==================================================
+ 
+ 
+mass flux : Q_IN=0.5605E+04 Q_UP=0.2789E+03 Q_EX=0.5326E+04
+ 
+Maximum divergence= 0.87274E-14 Maximum CFL number= 0.47195E+01
+ 
+ Elapsed time   12.0000000000000     
+ 
+==================================================
+ 30005th step   Time :  0.90015E+04 DT :  0.30000E+00
+==================================================
+ 
+ 
+mass flux : Q_IN=0.5605E+04 Q_UP=0.2789E+03 Q_EX=0.5326E+04
+ 
+Maximum divergence= 0.98411E-14 Maximum CFL number= 0.47109E+01
+ 
+ Elapsed time   13.0000000000000     
+ 
+==================================================
+ 30006th step   Time :  0.90018E+04 DT :  0.30000E+00
+==================================================
+ 
+ 
+mass flux : Q_IN=0.5605E+04 Q_UP=0.2789E+03 Q_EX=0.5326E+04
+ 
+Maximum divergence= 0.92912E-14 Maximum CFL number= 0.47077E+01
+ 
+ Elapsed time   12.0000000000000     
+ 
+==================================================
+ 30007th step   Time :  0.90021E+04 DT :  0.30000E+00
+==================================================
+ 
+ 
+mass flux : Q_IN=0.5605E+04 Q_UP=0.2789E+03 Q_EX=0.5326E+04
+ 
+Maximum divergence= 0.99005E-14 Maximum CFL number= 0.47110E+01
+ 
+ Elapsed time   13.0000000000000     
+ 
+==================================================
+ 30008th step   Time :  0.90024E+04 DT :  0.30000E+00
+==================================================
+ 
+ 
+mass flux : Q_IN=0.5605E+04 Q_UP=0.2790E+03 Q_EX=0.5326E+04
+ OMP Threads # =                     0
+-----------------------------------------------------------------
+PARAMETER FILE FOR DNS OF TURBULENT BOUNDARY LAYER WITH ROUGH WAL
+-----------------------------------------------------------------
+FILENAMES                                                        
+PARAMETER FILE FOR SIMULATION        FILEPAR:                    
+Re300_tran_02.par                                                                                   
+-------------------------------------------------------------    
+THE INLFOW DATA GENERATION FOR TURBULENT BOUNDARY LAYER          
+-------------------------------------------------------------    
+SIMULATION TYPE                                                  
+SIMULATION TYPE (INFLOW=0,MAIN=1)    ITYPE  :              1
+-------------------------------------------------------------    
+THE NUMBER OF GRID IN X1 DIRECTION   N1     :           2049
+THE NUMBER OF GRID IN X2 DIRECTION   N2     :            150
+THE NUMBER OF GRID IN X3 DIRECTION   N3     :            513
+REYNOLDS NUMBER                      RE     :  0.3000000E+03
+Re_theta at inlet station         R_theta_in:  0.3000000E+03
+THE PHYSICAL LENGTH IN X1            ALX    :  0.7680000E+03
+THE PHYSICAL LENGTH IN X2            ALY    :  0.6000000E+02
+THE PHYSICAL LENGTH IN X3            ALZ    :  0.9600000E+02
+TIME STEP                            DT     :  0.3000000E+00
+INITIAL TURBULENCE INTENSITY         VPER   :  0.0000000E+00
+MAXIMUM CFL NUMBER                   CFLMAX :  0.2000000E+01
+-------------------------------------------------------------    
+THE PARAMETER ABOUT TIME STEP                                    
+THE START NUMBER OF TIME STEP        NSTART :          30001
+THE FINAL NUMBER OF TIME STEP        NFINAL :          45000
+INTERVAL OF PRINT OUTPUT FILE        NPRN   :           5000
+THE START TIME                       TSTART :  0.9000000E+04
+INTERVAL OF PRINT IN INSF(Non-zero)  NINS   :             40
+INTERVAL OF RE-READING PARAMETER     NREPAR :           1000
+INTERVAL OF READ/WRITE INFLOW FILE   NINFLOW:           5000
+INTERVAL OF AVERAGING                NAVGSTP:             10
+-------------------------------------------------------------    
+INFLOW PARAMETER                                                 
+Continuous inflow generation(YES=1)  IGEN   :              0
+INFLOW SAVING (YES=1)                INFSAVE:              0
+INFLOW SAVING POINT                  I_SAVE :             32
+THE FIRST READING STEP OF INFLOW     NFLINF :              0
+-------------------------------------------------------------    
+OPTION                                                           
+WRITE OPTION        (YES=1)          NWRITE :              1
+READ OPTION (YES=1, N1M/2->N1M=2)    NREAD  :              1
+RE-READING PARAMETER OPTION (YES=1)  IREPAR :              1
+OPTIMAL TIME STEP   (YES=1)          IDTOPT :              0
+INPUT LENGTH IN CODE  (YES=1)        INCODE :              0
+-------------------------------------------------------------    
+AVERAGING OPTION:                                                
+AVERAGING OPTION (TRAN=0,AVG=1,CON=2)IAVG   :              1
+BUDGET AVERAGING (YES=1)             IAVGB  :              0
+CORRELATION AVERAGING (YES=1)        IAVGC  :              0
+CORRELATION J POINT NUMBER MAX       JCMAX  :              3
+CORRELATION J POINT 1                JC1    :             16
+CORRELATION J POINT 3                JC3    :              0
+CORRELATION J POINT 3                JC3    :              0
+-------------------------------------------------------------    
+POSTPROCESSING OPTION                                            
+WRITE TIME HISTORY FILE (YES=1)      ITHIST :              0
+TIME HISTORY POINT 1                 ITHIST1:              1
+TIME HISTORY POINT 2                 ITHIST2:            100
+TIME HISTORY POINT 3                 ITHIST3:            500
+TIME HISTORY POINT 4                 ITHIST4:            700
+TIME HISTORY POINT 5                 ITHIST5:            900
+TIME HISTORY POINT 6                 ITHIST6:           1100
+TIME HISTORY POINT 7                 ITHIST7:           1300
+TIME HISTORY POINT 8                 ITHIST8:           1500
+TIME HISTORY POINT 9                 ITHIST9:           1700
+TIME HISTORY POINT FOR AVG           IAVGMON:            500
+TIME HISTORY POINT FOR AVG           JAVGMON:              1
+WRITE PROFILE FILE (YES=1)           IPROF  :              0
+PROFILE POINT 1                      IPROF1 :              1
+PROFILE POINT 2                      IPROF2 :            100
+PROFILE POINT 3                      IPROF3 :            200
+PROFILE POINT 4                      IPROF4 :            300
+PROFILE POINT 5                      IPROF5 :            400
+PROFILE POINT 6                      IPROF6 :            500
+WRITE INSTANTANEOUS FLOW FIELD(YES=1)INSF   :              1
+WRITE WALL DATA (YES=1)              IWRITEW:              1
+-------------------------------------------------------------    
+FILENAMES                                                        
+INPUT FILE FOR READUP                FILEINI:                    
+/home/HyunQ/Rough_TBL/LMP/513/L12W075/L12W075INS/tran.030000                                        
+OUTPUT FILE PREFIX FOR WRITEUP       FILEOUT:                    
+/home/HyunQ/Rough_TBL/LMP/513/L12W075/L12W075INS/avg.                                               
+INPUT FILE FOR AVERAGING             FILEAVG:                    
+/home/HyunQ/Rough_TBL/LMP/513/L12W075/L12W075AVG/avg_a.000000                                       
+INPUT FILE FOR BUDGET AVERAGING      FILEBDG:                    
+/home/HyunQ/Rough_TBL/LMP/513/L12W075/L12W075AVG/avg_b.000000                                       
+INPUT FILE FOR CORRELATION AVERAGING FILECOR:                    
+/home/HyunQ/Rough_TBL/LMP/513/L12W075/L12W075AVG/avg_c.000000                                       
+OUTPUT FILE PREFIX FOR AVG DATA      FOUTAVG:                    
+/home/HyunQ/Rough_TBL/LMP/513/L12W075/L12W075AVG/avg_a.                                             
+OUTPUT FILE PREFIX FOR BUDGET DATA   FOUTBDG:                    
+/home/HyunQ/Rough_TBL/LMP/513/L12W075/L12W075AVG/avg_b.                                             
+OUTPUT FILE PREFIX FOR COR. DATA     FOUTCOR:                    
+/home/HyunQ/Rough_TBL/LMP/513/L12W075/L12W075AVG/avg_c.                                             
+INPUT FILE FOR CONT. INFLOW GEN.     FRESIN :                    
+rescale.000000                                                                                      
+OUTPUT FILE FOR CONT. INFLOW GEN.    FRESOUT:                    
+rescale.                                                                                            
+INPUT FILE PREFIX FOR INFLOW B.C.    FILEINF:                    
+/home/HyunQ/Rough_TBL/Inflow/zgrid513/DT03/inflow.                                                  
+OUTPUT FILE PREFIX FOR INFLOW SAVING FILEINS:                    
+inflow.                                                                                             
+GRID FILE IN Y DOMAIN                FILEGRD:                    
+rough.grd                                                                                           
+IBM data                             FILEIBM:                    
+IBM.dat                                                                                             
+-------------------------------------------------------------    
+FILE FORMAT TYPE OPTION (UNFORMATTED=0, FORMATTED=1)             
+INPUT FILE                           IFORIN :              0
+OUTPUT FILE                          IFOROUT:              0
+INFLOW FILE                          IFORINF:              0
+RESCALE DATA FILE                    IFORRES:              0
+AVERAGE FILE                         IFORAVG:              0
+-------------------------------------------------------------    
+IMMERSED BOUNDARY                                                
+TIME for first forcing               TFOR   :  0.2000000E+03
+APPLY MOMENTUM FORCING (YES=1)       IMFOR  :              1
+APPLY MASS SOURCE (YES=1)            IMASS  :              0
+BLOCK X START                        IB     :            214
+BLOCK Y START                        JB     :             48
+BLOCK WIDTH                          IW     :              4
+BLOCK PERIOD                         IL     :             16
+BLOCK Z WIDTH                        KW     :              3
+BLOCK Z PERIOD                       KL     :             16
+BLOCK HEIGHT                         HB     :  0.1500000E+01
+BLOCK SHIFT X                        EPSX   :  0.5000000E+00
+BLOCK SHIFT Y                        EPSY   :  0.5000000E+00
+ c_kapa BB PII=  0.410000000000000        5.00000000000000     
+  0.500000000000000     
+ The FIRST Parameter file read from 
+ Re300_tran_02.par                                                              
+                      
+ call make_ibm
+   12.0000000000000     
+   31.0000000000000     
+   95.0000000000000     
+   159.000000000000     
+   223.000000000000     
+   287.000000000000     
+   351.000000000000     
+   415.000000000000     
+   479.000000000000     
+ Writing done
+ make_ibm done
+ Reading unformatted initial data from 
+ /home/HyunQ/Rough_TBL/LMP/513/L12W075/L12W075INS/tran.030000                   
+                      
+ 
+Maximum divergence= 0.11213E-13 Maximum CFL number= 0.48019E+01
+ 
+==================================================
+ 30001th step   Time :  0.90003E+04 DT :  0.30000E+00
+==================================================
+ 
+ INFLOW FILE OPENING FOR READING : FILE=
+ /home/HyunQ/Rough_TBL/Inflow/zgrid513/DT03/inflow.030001                       
+                      
+ 
+mass flux : Q_IN=0.5605E+04 Q_UP=0.2788E+03 Q_EX=0.5326E+04
+ OMP Threads # =                     0
+-----------------------------------------------------------------
+PARAMETER FILE FOR DNS OF TURBULENT BOUNDARY LAYER WITH ROUGH WAL
+-----------------------------------------------------------------
+FILENAMES                                                        
+PARAMETER FILE FOR SIMULATION        FILEPAR:                    
+Re300_tran_02.par                                                                                   
+-------------------------------------------------------------    
+THE INLFOW DATA GENERATION FOR TURBULENT BOUNDARY LAYER          
+-------------------------------------------------------------    
+SIMULATION TYPE                                                  
+SIMULATION TYPE (INFLOW=0,MAIN=1)    ITYPE  :              1
+-------------------------------------------------------------    
+THE NUMBER OF GRID IN X1 DIRECTION   N1     :           2049
+THE NUMBER OF GRID IN X2 DIRECTION   N2     :            150
+THE NUMBER OF GRID IN X3 DIRECTION   N3     :            513
+REYNOLDS NUMBER                      RE     :  0.3000000E+03
+Re_theta at inlet station         R_theta_in:  0.3000000E+03
+THE PHYSICAL LENGTH IN X1            ALX    :  0.7680000E+03
+THE PHYSICAL LENGTH IN X2            ALY    :  0.6000000E+02
+THE PHYSICAL LENGTH IN X3            ALZ    :  0.9600000E+02
+TIME STEP                            DT     :  0.3000000E+00
+INITIAL TURBULENCE INTENSITY         VPER   :  0.0000000E+00
+MAXIMUM CFL NUMBER                   CFLMAX :  0.2000000E+01
+-------------------------------------------------------------    
+THE PARAMETER ABOUT TIME STEP                                    
+THE START NUMBER OF TIME STEP        NSTART :         105001
+THE FINAL NUMBER OF TIME STEP        NFINAL :         145000
+INTERVAL OF PRINT OUTPUT FILE        NPRN   :           5000
+THE START TIME                       TSTART :  0.3150000E+05
+INTERVAL OF PRINT IN INSF(Non-zero)  NINS   :            160
+INTERVAL OF RE-READING PARAMETER     NREPAR :           1000
+INTERVAL OF READ/WRITE INFLOW FILE   NINFLOW:           5000
+INTERVAL OF AVERAGING                NAVGSTP:             10
+-------------------------------------------------------------    
+INFLOW PARAMETER                                                 
+Continuous inflow generation(YES=1)  IGEN   :              0
+INFLOW SAVING (YES=1)                INFSAVE:              0
+INFLOW SAVING POINT                  I_SAVE :             32
+THE FIRST READING STEP OF INFLOW     NFLINF :              0
+-------------------------------------------------------------    
+OPTION                                                           
+WRITE OPTION        (YES=1)          NWRITE :              1
+READ OPTION (YES=1, N1M/2->N1M=2)    NREAD  :              1
+RE-READING PARAMETER OPTION (YES=1)  IREPAR :              1
+OPTIMAL TIME STEP   (YES=1)          IDTOPT :              0
+INPUT LENGTH IN CODE  (YES=1)        INCODE :              0
+-------------------------------------------------------------    
+AVERAGING OPTION:                                                
+AVERAGING OPTION (TRAN=0,AVG=1,CON=2)IAVG   :              2
+BUDGET AVERAGING (YES=1)             IAVGB  :              0
+CORRELATION AVERAGING (YES=1)        IAVGC  :              0
+CORRELATION J POINT NUMBER MAX       JCMAX  :              3
+CORRELATION J POINT 1                JC1    :             16
+CORRELATION J POINT 3                JC3    :              0
+CORRELATION J POINT 3                JC3    :              0
+-------------------------------------------------------------    
+POSTPROCESSING OPTION                                            
+WRITE TIME HISTORY FILE (YES=1)      ITHIST :              0
+TIME HISTORY POINT 1                 ITHIST1:              1
+TIME HISTORY POINT 2                 ITHIST2:            100
+TIME HISTORY POINT 3                 ITHIST3:            500
+TIME HISTORY POINT 4                 ITHIST4:            700
+TIME HISTORY POINT 5                 ITHIST5:            900
+TIME HISTORY POINT 6                 ITHIST6:           1100
+TIME HISTORY POINT 7                 ITHIST7:           1300
+TIME HISTORY POINT 8                 ITHIST8:           1500
+TIME HISTORY POINT 9                 ITHIST9:           1700
+TIME HISTORY POINT FOR AVG           IAVGMON:            500
+TIME HISTORY POINT FOR AVG           JAVGMON:              1
+WRITE PROFILE FILE (YES=1)           IPROF  :              0
+PROFILE POINT 1                      IPROF1 :              1
+PROFILE POINT 2                      IPROF2 :            100
+PROFILE POINT 3                      IPROF3 :            200
+PROFILE POINT 4                      IPROF4 :            300
+PROFILE POINT 5                      IPROF5 :            400
+PROFILE POINT 6                      IPROF6 :            500
+WRITE INSTANTANEOUS FLOW FIELD(YES=1)INSF   :              1
+WRITE WALL DATA (YES=1)              IWRITEW:              1
+-------------------------------------------------------------    
+FILENAMES                                                        
+INPUT FILE FOR READUP                FILEINI:                    
+/home/HyunQ/Rough_TBL/LMP/L12W60/L12W60INS/avg.105000                                               
+OUTPUT FILE PREFIX FOR WRITEUP       FILEOUT:                    
+/home/HyunQ/Rough_TBL/LMP/L12W60/L12W60INS/avg.                                                     
+INPUT FILE FOR AVERAGING             FILEAVG:                    
+/home/HyunQ/Rough_TBL/LMP/L12W60/L12W60AVG/avg_a.005500                                             
+INPUT FILE FOR BUDGET AVERAGING      FILEBDG:                    
+/home/HyunQ/Rough_TBL/LMP/L12W60/L12W60AVG/avg_b.000000                                             
+INPUT FILE FOR CORRELATION AVERAGING FILECOR:                    
+/home/HyunQ/Rough_TBL/LMP/L12W60/L12W60AVG/avg_c.000000                                             
+OUTPUT FILE PREFIX FOR AVG DATA      FOUTAVG:                    
+/home/HyunQ/Rough_TBL/LMP/L12W60/L12W60AVG/avg_a.                                                   
+OUTPUT FILE PREFIX FOR BUDGET DATA   FOUTBDG:                    
+/home/HyunQ/Rough_TBL/LMP/L12W60/L12W60AVG/avg_b.                                                   
+OUTPUT FILE PREFIX FOR COR. DATA     FOUTCOR:                    
+/home/HyunQ/Rough_TBL/LMP/L12W60/L12W60AVG/avg_c.                                                   
+INPUT FILE FOR CONT. INFLOW GEN.     FRESIN :                    
+rescale.000000                                                                                      
+OUTPUT FILE FOR CONT. INFLOW GEN.    FRESOUT:                    
+rescale.                                                                                            
+INPUT FILE PREFIX FOR INFLOW B.C.    FILEINF:                    
+/home/HyunQ/Rough_TBL/Inflow/zgrid513/DT03/inflow.                                                  
+OUTPUT FILE PREFIX FOR INFLOW SAVING FILEINS:                    
+inflow.                                                                                             
+GRID FILE IN Y DOMAIN                FILEGRD:                    
+rough.grd                                                                                           
+IBM data                             FILEIBM:                    
+IBM.dat                                                                                             
+-------------------------------------------------------------    
+FILE FORMAT TYPE OPTION (UNFORMATTED=0, FORMATTED=1)             
+INPUT FILE                           IFORIN :              0
+OUTPUT FILE                          IFOROUT:              0
+INFLOW FILE                          IFORINF:              0
+RESCALE DATA FILE                    IFORRES:              0
+AVERAGE FILE                         IFORAVG:              0
+-------------------------------------------------------------    
+IMMERSED BOUNDARY                                                
+TIME for first forcing               TFOR   :  0.2000000E+03
+APPLY MOMENTUM FORCING (YES=1)       IMFOR  :              1
+APPLY MASS SOURCE (YES=1)            IMASS  :              0
+BLOCK X START                        IB     :            214
+BLOCK Y START                        JB     :             48
+BLOCK WIDTH                          IW     :              4
+BLOCK PERIOD                         IL     :             16
+BLOCK Z WIDTH                        KW     :             32
+BLOCK Z PERIOD                       KL     :             16
+BLOCK HEIGHT                         HB     :  0.1500000E+01
+BLOCK SHIFT X                        EPSX   :  0.5000000E+00
+BLOCK SHIFT Y                        EPSY   :  0.5000000E+00
+ c_kapa BB PII=  0.410000000000000        5.00000000000000     
+  0.500000000000000     
+ The FIRST Parameter file read from 
+ Re300_tran_02.par                                                              
+                      
+ call make_ibm
+forrtl: error (69): process interrupted (SIGINT)
+Image              PC                Routine            Line        Source             
+libpthread.so.0    00000039D720F5DB  Unknown               Unknown  Unknown
+libiomp5.so        00002B610D6158DC  Unknown               Unknown  Unknown

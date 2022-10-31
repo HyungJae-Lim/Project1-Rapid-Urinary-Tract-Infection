@@ -1,0 +1,20 @@
+      
+C   ********************* INIWAVE ******************************
+      SUBROUTINE INIWAVE
+      INCLUDE 'dctbl.h'
+      COMMON/WAVK13/AK1(M1),AK3((m3-1)/2+1)
+
+      PI=ACOS(-1.0)
+
+C     MODIFIED WAVE NUMBER DEFINITION NECESSARY FOR THE X1 DIRECTION
+      DO 10 L=1,N1M
+  10  AK1(L)=2.*(1.-COS((L-1)*PI/N1M))*DX1Q
+
+C     MODIFIED WAVE NUMBER DEFINITION NECESSARY FOR THE X3 DIRECTION
+      DO 20 M=1,N3M/2+1
+  20  AK3(M)=2.*(1.-COS(real(M-1)*2.*PI/N3M))*DX3Q
+
+      CALL METRICPOISSON
+
+      RETURN
+      END

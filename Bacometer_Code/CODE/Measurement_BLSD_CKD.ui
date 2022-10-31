@@ -1,0 +1,1716 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1023</width>
+    <height>601</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QLabel" name="Label_time">
+   <property name="geometry">
+    <rect>
+     <x>189</x>
+     <y>35</y>
+     <width>160</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="font">
+    <font>
+     <family>NanumSquare</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>AM 8:30:58</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Button_Backspace">
+   <property name="geometry">
+    <rect>
+     <x>21</x>
+     <y>20</y>
+     <width>40</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	border-image: url(:/Icon/backspace.png);
+}
+
+QPushButton:pressed {
+	border-image: url(:/Icon/backspace_pressed.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Label_date">
+   <property name="geometry">
+    <rect>
+     <x>71</x>
+     <y>35</y>
+     <width>121</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>NanumSquare</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>20-06-06</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>100</y>
+     <width>341</width>
+     <height>491</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #f7f7f7;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QProgressBar" name="Progressbar_1">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>97</y>
+      <width>330</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QProgressBar {
+    background-color: #cdcdcd;
+    border-radius: 10px;
+    text-align: Center;
+	font: 75 15pt &quot;Arial&quot;;
+}
+
+QProgressBar::chunk {
+    background-color: #81d0bc;
+    border-radius: 10px;
+    width: 10px;
+}
+</string>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+    <property name="textVisible">
+     <bool>false</bool>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Fin_Vial1">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>27</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Fin_Vial2">
+    <property name="geometry">
+     <rect>
+      <x>407</x>
+      <y>27</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Button_Dataset">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>143</y>
+      <width>90</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	border-image: url(:/Icon/enter.png);
+}
+
+QPushButton:pressed {
+	border-image: url(:/Icon/enter_pressed.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Button_Tempset">
+    <property name="geometry">
+     <rect>
+      <x>234</x>
+      <y>266</y>
+      <width>90</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	border-image: url(:/Icon/enter.png);
+}
+
+QPushButton:pressed {
+	border-image: url(:/Icon/enter_pressed.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Button_Monitoring_Start">
+    <property name="geometry">
+     <rect>
+      <x>14</x>
+      <y>20</y>
+      <width>120</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	border-image: url(:/Icon/start.png);
+}
+
+QPushButton:pressed {
+	border-image: url(:/Icon/start_pressed.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>284</y>
+      <width>60</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/Icon/temperature1.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Label_temp3_4">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>123</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Nanum square</family>
+      <pointsize>10</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 10pt &quot;Nanum square&quot;;
+color: #a3a3a3;</string>
+    </property>
+    <property name="text">
+     <string>Data No.</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Label_temp3_5">
+    <property name="geometry">
+     <rect>
+      <x>82</x>
+      <y>243</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Nanum square</family>
+      <pointsize>10</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 10pt &quot;Nanum square&quot;;
+color: #a3a3a3;</string>
+    </property>
+    <property name="text">
+     <string>Temperature ℃</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="Spinbox_Case">
+    <property name="geometry">
+     <rect>
+      <x>81</x>
+      <y>143</y>
+      <width>141</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Nanum square</family>
+      <pointsize>18</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QSpinBox {
+    border-image: url(:/Icon/mea_sel_off_box.png) 4;
+    border-width: 2;
+    font: 75 18pt &quot;Nanum square&quot;;
+}
+
+
+QSpinBox::up-button {
+    subcontrol-origin: border;
+    subcontrol-position: top right; /* position at the top right corner */
+
+    width: 50px; /* 16 + 2*1px border-width = 15px padding + 3px parent border */
+    border-image: url(:/Icon/qspin_up.png) ;
+}
+
+QSpinBox::up-button:pressed {
+    border-image: url(:/Icon/qspin_up_pressed.png) ;
+}
+
+QSpinBox::down-button {
+    subcontrol-origin: border;
+    subcontrol-position: bottom right; /* position at bottom right corner */
+    width: 50px; /* 16 + 2*1px border-width = 15px padding + 3px parent border */
+    border-image: url(:/Icon/qspin_down.png);
+
+}
+
+QSpinBox::down-button:pressed {
+    border-image: url(:/Icon/qspin_down_pressed.png) ;
+}
+</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="Spinbox_Temp">
+    <property name="geometry">
+     <rect>
+      <x>79</x>
+      <y>266</y>
+      <width>141</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Nanum square</family>
+      <pointsize>18</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QSpinBox {
+    border-image: url(:/Icon/mea_sel_off_box.png) 4;
+    border-width: 2;
+    font: 75 18pt &quot;Nanum square&quot;;
+}
+
+
+QSpinBox::up-button {
+    subcontrol-origin: border;
+    subcontrol-position: top right; /* position at the top right corner */
+
+    width: 50px; /* 16 + 2*1px border-width = 15px padding + 3px parent border */
+    border-image: url(:/Icon/qspin_up.png) ;
+}
+
+QSpinBox::up-button:pressed {
+    border-image: url(:/Icon/qspin_up_pressed.png) ;
+}
+
+QSpinBox::down-button {
+    subcontrol-origin: border;
+    subcontrol-position: bottom right; /* position at bottom right corner */
+    width: 50px; /* 16 + 2*1px border-width = 15px padding + 3px parent border */
+    border-image: url(:/Icon/qspin_down.png);
+
+}
+
+QSpinBox::down-button:pressed {
+    border-image: url(:/Icon/qspin_down_pressed.png) ;
+}
+</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Information_1">
+    <property name="geometry">
+     <rect>
+      <x>143</x>
+      <y>30</y>
+      <width>35</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>NanumSquare</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Button_Monitoring_Stop">
+    <property name="geometry">
+     <rect>
+      <x>207</x>
+      <y>20</y>
+      <width>120</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	border-image: url(:/Icon/stop.png);
+}
+
+QPushButton:pressed {
+	border-image: url(:/Icon/stop_pressed.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="Spinbox_Time">
+    <property name="geometry">
+     <rect>
+      <x>82</x>
+      <y>386</y>
+      <width>141</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Nanum square</family>
+      <pointsize>18</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QSpinBox {
+    border-image: url(:/Icon/mea_sel_off_box.png) 4;
+    border-width: 2;
+    font: 75 18pt &quot;Nanum square&quot;;
+}
+
+
+QSpinBox::up-button {
+    subcontrol-origin: border;
+    subcontrol-position: top right; /* position at the top right corner */
+
+    width: 50px; /* 16 + 2*1px border-width = 15px padding + 3px parent border */
+    border-image: url(:/Icon/qspin_up.png) ;
+}
+
+QSpinBox::up-button:pressed {
+    border-image: url(:/Icon/qspin_up_pressed.png) ;
+}
+
+QSpinBox::down-button {
+    subcontrol-origin: border;
+    subcontrol-position: bottom right; /* position at bottom right corner */
+    width: 50px; /* 16 + 2*1px border-width = 15px padding + 3px parent border */
+    border-image: url(:/Icon/qspin_down.png);
+
+}
+
+QSpinBox::down-button:pressed {
+    border-image: url(:/Icon/qspin_down_pressed.png) ;
+}
+</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>398</y>
+      <width>60</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/Icon/set_ic_time.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Label_temp3_8">
+    <property name="geometry">
+     <rect>
+      <x>85</x>
+      <y>363</y>
+      <width>71</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Nanum square</family>
+      <pointsize>10</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 10pt &quot;Nanum square&quot;;
+color: #a3a3a3;</string>
+    </property>
+    <property name="text">
+     <string>Time Hour</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Button_Timeset">
+    <property name="geometry">
+     <rect>
+      <x>237</x>
+      <y>386</y>
+      <width>90</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	border-image: url(:/Icon/enter.png);
+}
+
+QPushButton:pressed {
+	border-image: url(:/Icon/enter_pressed.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>176</x>
+      <y>40</y>
+      <width>21</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>NanumSquare</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>%</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Label_data">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>123</y>
+      <width>21</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Nanum square</family>
+      <pointsize>10</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 10pt &quot;Nanum square&quot;;
+color: #a3a3a3;</string>
+    </property>
+    <property name="text">
+     <string>33</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Label_timeset">
+    <property name="geometry">
+     <rect>
+      <x>147</x>
+      <y>363</y>
+      <width>21</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Nanum square</family>
+      <pointsize>10</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 10pt &quot;Nanum square&quot;;
+color: #a3a3a3;</string>
+    </property>
+    <property name="text">
+     <string>33</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Button_Datanum">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>160</y>
+      <width>41</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	border-image: url(:/Icon/case.png);
+}
+
+QPushButton:pressed {
+	border-image: url(:/Icon/case_pressed.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>Progressbar_1</zorder>
+   <zorder>Fin_Vial1</zorder>
+   <zorder>Fin_Vial2</zorder>
+   <zorder>Button_Dataset</zorder>
+   <zorder>Button_Tempset</zorder>
+   <zorder>Button_Monitoring_Start</zorder>
+   <zorder>label_2</zorder>
+   <zorder>Label_temp3_4</zorder>
+   <zorder>Label_temp3_5</zorder>
+   <zorder>Spinbox_Case</zorder>
+   <zorder>Spinbox_Temp</zorder>
+   <zorder>Button_Monitoring_Stop</zorder>
+   <zorder>Spinbox_Time</zorder>
+   <zorder>label_8</zorder>
+   <zorder>Label_temp3_8</zorder>
+   <zorder>Button_Timeset</zorder>
+   <zorder>label_5</zorder>
+   <zorder>Information_1</zorder>
+   <zorder>Label_data</zorder>
+   <zorder>Label_timeset</zorder>
+   <zorder>Button_Datanum</zorder>
+  </widget>
+  <widget class="GraphWidget" name="Graph_9" native="true">
+   <property name="geometry">
+    <rect>
+     <x>348</x>
+     <y>100</y>
+     <width>670</width>
+     <height>422</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 1px solid #cdcdcd;</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame_3">
+   <property name="geometry">
+    <rect>
+     <x>348</x>
+     <y>521</y>
+     <width>670</width>
+     <height>70</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #ffffff;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QSpinBox" name="Spinbox_Time_2">
+    <property name="geometry">
+     <rect>
+      <x>82</x>
+      <y>386</y>
+      <width>141</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Nanum square</family>
+      <pointsize>18</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QSpinBox {
+    border-image: url(:/Icon/mea_sel_off_box.png) 4;
+    border-width: 2;
+    font: 75 18pt &quot;Nanum square&quot;;
+}
+
+
+QSpinBox::up-button {
+    subcontrol-origin: border;
+    subcontrol-position: top right; /* position at the top right corner */
+
+    width: 50px; /* 16 + 2*1px border-width = 15px padding + 3px parent border */
+    border-image: url(:/Icon/qspin_up.png) ;
+}
+
+QSpinBox::up-button:pressed {
+    border-image: url(:/Icon/qspin_up_pressed.png) ;
+}
+
+QSpinBox::down-button {
+    subcontrol-origin: border;
+    subcontrol-position: bottom right; /* position at bottom right corner */
+    width: 50px; /* 16 + 2*1px border-width = 15px padding + 3px parent border */
+    border-image: url(:/Icon/qspin_down.png);
+
+}
+
+QSpinBox::down-button:pressed {
+    border-image: url(:/Icon/qspin_down_pressed.png) ;
+}
+</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>398</y>
+      <width>60</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/Icon/set_ic_time.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Button_Timeset_2">
+    <property name="geometry">
+     <rect>
+      <x>237</x>
+      <y>386</y>
+      <width>90</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	border-image: url(:/Icon/enter.png);
+}
+
+QPushButton:pressed {
+	border-image: url(:/Icon/enter_pressed.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Num_Vial_1">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>24</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/Icon/no1.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="CFU_Port1_I">
+    <property name="geometry">
+     <rect>
+      <x>24</x>
+      <y>24</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>NanumSquare</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="CFU_Port_2">
+    <property name="geometry">
+     <rect>
+      <x>201</x>
+      <y>24</y>
+      <width>80</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>NanumSquare</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Label_temp3_13">
+    <property name="geometry">
+     <rect>
+      <x>113</x>
+      <y>30</y>
+      <width>50</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Nanum square</family>
+      <pointsize>10</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 10pt &quot;Nanum square&quot;;
+color: #a3a3a3;</string>
+    </property>
+    <property name="text">
+     <string>CFU/mL</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="CFU_Port1">
+    <property name="geometry">
+     <rect>
+      <x>61</x>
+      <y>24</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Nanum square</family>
+      <pointsize>12</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 12pt &quot;Nanum square&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="CFU_Port1_S">
+    <property name="geometry">
+     <rect>
+      <x>81</x>
+      <y>14</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>NanumSquare</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Label_temp3_15">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>30</y>
+      <width>50</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Nanum square</family>
+      <pointsize>10</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 10pt &quot;Nanum square&quot;;
+color: #a3a3a3;</string>
+    </property>
+    <property name="text">
+     <string>CFU/mL</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Num_Vial_2">
+    <property name="geometry">
+     <rect>
+      <x>175</x>
+      <y>24</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/Icon/no2.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="CFU_Port2_I">
+    <property name="geometry">
+     <rect>
+      <x>191</x>
+      <y>24</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>NanumSquare</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="CFU_Port2_S">
+    <property name="geometry">
+     <rect>
+      <x>248</x>
+      <y>14</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>NanumSquare</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="CFU_Port2">
+    <property name="geometry">
+     <rect>
+      <x>228</x>
+      <y>24</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Nanum square</family>
+      <pointsize>12</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 12pt &quot;Nanum square&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="CFU_Port4">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>24</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Nanum square</family>
+      <pointsize>12</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 12pt &quot;Nanum square&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Label_temp3_18">
+    <property name="geometry">
+     <rect>
+      <x>612</x>
+      <y>30</y>
+      <width>50</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Nanum square</family>
+      <pointsize>10</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 10pt &quot;Nanum square&quot;;
+color: #a3a3a3;</string>
+    </property>
+    <property name="text">
+     <string>CFU/mL</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Num_Vial_3">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>24</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/Icon/no3.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Num_Vial_4">
+    <property name="geometry">
+     <rect>
+      <x>507</x>
+      <y>24</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/Icon/no4.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="CFU_Port3_I">
+    <property name="geometry">
+     <rect>
+      <x>356</x>
+      <y>24</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>NanumSquare</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="CFU_Port3_S">
+    <property name="geometry">
+     <rect>
+      <x>413</x>
+      <y>14</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>NanumSquare</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="CFU_Port4_I">
+    <property name="geometry">
+     <rect>
+      <x>523</x>
+      <y>24</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>NanumSquare</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="CFU_Port4_S">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>14</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>NanumSquare</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Label_temp3_19">
+    <property name="geometry">
+     <rect>
+      <x>445</x>
+      <y>30</y>
+      <width>50</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Nanum square</family>
+      <pointsize>10</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 10pt &quot;Nanum square&quot;;
+color: #a3a3a3;</string>
+    </property>
+    <property name="text">
+     <string>CFU/mL</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="CFU_Port3">
+    <property name="geometry">
+     <rect>
+      <x>393</x>
+      <y>24</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Nanum square</family>
+      <pointsize>12</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 12pt &quot;Nanum square&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <zorder>Spinbox_Time_2</zorder>
+   <zorder>label_9</zorder>
+   <zorder>Button_Timeset_2</zorder>
+   <zorder>CFU_Port1_I</zorder>
+   <zorder>CFU_Port_2</zorder>
+   <zorder>Label_temp3_13</zorder>
+   <zorder>Num_Vial_1</zorder>
+   <zorder>CFU_Port1_S</zorder>
+   <zorder>CFU_Port1</zorder>
+   <zorder>Label_temp3_15</zorder>
+   <zorder>CFU_Port2_I</zorder>
+   <zorder>CFU_Port2_S</zorder>
+   <zorder>CFU_Port2</zorder>
+   <zorder>Num_Vial_2</zorder>
+   <zorder>Label_temp3_18</zorder>
+   <zorder>CFU_Port3_I</zorder>
+   <zorder>CFU_Port3_S</zorder>
+   <zorder>CFU_Port4_I</zorder>
+   <zorder>CFU_Port4_S</zorder>
+   <zorder>Label_temp3_19</zorder>
+   <zorder>CFU_Port3</zorder>
+   <zorder>Num_Vial_3</zorder>
+   <zorder>Num_Vial_4</zorder>
+   <zorder>CFU_Port4</zorder>
+  </widget>
+  <widget class="QPushButton" name="Button_EasterEgg">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>20</y>
+     <width>140</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/Icon/logo.png);
+font: 1pt &quot;Ubuntu&quot;;
+
+
+</string>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>348</x>
+     <y>100</y>
+     <width>670</width>
+     <height>422</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #f7f7f7;
+border: 1px solid #cdcdcd;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Label_StorageIcon">
+   <property name="geometry">
+    <rect>
+     <x>747</x>
+     <y>55</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/Icon/storage.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Label_temp3">
+   <property name="geometry">
+    <rect>
+     <x>946</x>
+     <y>23</y>
+     <width>30</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>NanumSquare</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>33</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Label_temp3_2">
+   <property name="geometry">
+    <rect>
+     <x>781</x>
+     <y>23</y>
+     <width>41</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Nanum square</family>
+     <pointsize>14</pointsize>
+     <weight>9</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 14pt &quot;Nanum square&quot;;
+color: #a3a3a3;</string>
+   </property>
+   <property name="text">
+    <string>Cur.</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Label_storage">
+   <property name="geometry">
+    <rect>
+     <x>958</x>
+     <y>59</y>
+     <width>25</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Nanum square</family>
+     <pointsize>14</pointsize>
+     <weight>9</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 14pt &quot;Nanum square&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>43</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Label_temp1">
+   <property name="geometry">
+    <rect>
+     <x>824</x>
+     <y>23</y>
+     <width>30</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>NanumSquare</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>33</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>853</x>
+     <y>23</y>
+     <width>30</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>NanumSquare</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>℃</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Label_USB">
+   <property name="geometry">
+    <rect>
+     <x>714</x>
+     <y>18</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Label_temp3_3">
+   <property name="geometry">
+    <rect>
+     <x>904</x>
+     <y>23</y>
+     <width>41</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Nanum square</family>
+     <pointsize>14</pointsize>
+     <weight>9</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 14pt &quot;Nanum square&quot;;
+color: #a3a3a3;</string>
+   </property>
+   <property name="text">
+    <string>Set.</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QProgressBar" name="Progressbar_2">
+   <property name="geometry">
+    <rect>
+     <x>782</x>
+     <y>63</y>
+     <width>170</width>
+     <height>10</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QProgressBar {
+    background-color: #cdcdcd;
+    border-radius: 10px;
+    text-align: Center;
+	font: 75 15pt &quot;Arial&quot;;
+}
+
+QProgressBar::chunk {
+    background-color: #81d0bc;
+    border-radius: 10px;
+    width: 10px;
+}
+</string>
+   </property>
+   <property name="value">
+    <number>0</number>
+   </property>
+   <property name="textVisible">
+    <bool>false</bool>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>981</x>
+     <y>59</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Nanum square</family>
+     <pointsize>14</pointsize>
+     <weight>9</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 14pt &quot;Nanum square&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>%</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>975</x>
+     <y>23</y>
+     <width>30</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>NanumSquare</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>℃</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Label_USB_2">
+   <property name="geometry">
+    <rect>
+     <x>744</x>
+     <y>19</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/Icon/temperature2.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>label_6</zorder>
+  <zorder>Label_time</zorder>
+  <zorder>Button_Backspace</zorder>
+  <zorder>Label_date</zorder>
+  <zorder>frame_2</zorder>
+  <zorder>frame_3</zorder>
+  <zorder>Button_EasterEgg</zorder>
+  <zorder>Graph_9</zorder>
+  <zorder>Label_StorageIcon</zorder>
+  <zorder>Label_temp3</zorder>
+  <zorder>Label_temp3_2</zorder>
+  <zorder>Label_storage</zorder>
+  <zorder>Label_temp1</zorder>
+  <zorder>label_4</zorder>
+  <zorder>Label_USB</zorder>
+  <zorder>Label_temp3_3</zorder>
+  <zorder>Progressbar_2</zorder>
+  <zorder>label_7</zorder>
+  <zorder>label_3</zorder>
+  <zorder>Label_USB_2</zorder>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>GraphWidget</class>
+   <extends>QWidget</extends>
+   <header>graphwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="Icon/Icon.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,51 @@
+
+C*************** INSFIELD ***********************
+      SUBROUTINE INSFIELD(U,P)
+      INCLUDE 'dctbl.h'
+
+      CHARACTER*80 FILEW1U
+      CHARACTER*80 FILEW1V
+      CHARACTER*80 FILEW1W
+      CHARACTER*80 FILEW1P
+
+      REAL U(0:M1,0:M2,0:M3,3)
+      REAL P(M1,M2,M3)
+      
+      !need to change     
+      ! home4 home5 writing 
+      write(*,*) "INS"
+      FILEW1U='/home3/HyunQ/INSFIELD/L12W60/INS_U1.'
+      FILEW1V='/home3/HyunQ/INSFIELD/L12W60/INS_V1.'
+      FILEW1W='/home3/HyunQ/INSFIELD/L12W60/INS_W1.'
+      FILEW1P='/home3/HyunQ/INSFIELD/L12W60/INS_P1.'
+
+      N=INDEX(FILEW1U,'.')
+      WRITE(UNIT=FILEW1U(N+1:),FMT='(BN,I6.6)') NTIME
+      WRITE(UNIT=FILEW1V(N+1:),FMT='(BN,I6.6)') NTIME
+      WRITE(UNIT=FILEW1W(N+1:),FMT='(BN,I6.6)') NTIME
+      WRITE(UNIT=FILEW1P(N+1:),FMT='(BN,I6.6)') NTIME
+
+
+      N1_S1=0
+      N1_E1=N1
+      N2_S1=0
+      N2_E1=N2
+ 
+      OPEN (111,FILE=FILEW1U,FORM='UNFORMATTED',STATUS='UNKNOWN')
+      OPEN (121,FILE=FILEW1V,FORM='UNFORMATTED',STATUS='UNKNOWN')
+      OPEN (131,FILE=FILEW1W,FORM='UNFORMATTED',STATUS='UNKNOWN')
+      OPEN (141,FILE=FILEW1P,FORM='UNFORMATTED',STATUS='UNKNOWN')
+
+
+      WRITE(111) (((U(I,J,K,1),I=N1_S1,N1_E1),J=N2_S1,N2_E1),K=1,N3M)
+      WRITE(121) (((U(I,J,K,2),I=N1_S1,N1_E1),J=N2_S1,N2_E1),K=1,N3M)
+      WRITE(131) (((U(I,J,K,3),I=N1_S1,N1_E1),J=N2_S1,N2_E1),K=1,N3M)
+      WRITE(141) (((P(I,J,K),I=1,N1M),J=1,N2M),K=1,N3M)
+
+      CLOSE(111)
+      CLOSE(121)
+      CLOSE(131)
+      CLOSE(141)
+
+      RETURN
+      END
